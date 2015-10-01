@@ -95,6 +95,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias show='eog'
+alias open='xdg-open'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -129,9 +130,20 @@ source /usr/share/doc/cdargs/examples/cdargs-bash.sh
 
 # Git autocompletion
 source /etc/bash_completion.d/git-prompt
+#Ruby environment
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 
-export MYSQL_USER=juan
-export MYSQL_PASSWORD=bigmac5!
+# Some configuration #
+# GMOCK configuration flags
+PATH="$HOME/Sources/gmock-1.7.0/build/scripts/:$PATH"
+# GTEST configuration flags
+PATH="$HOME/Sources/gtest-1.7.0/build/scripts/:$PATH"
+# Custom bash scripts
+#PATH="$HOME/Projects/bash/:$PATH"
+# Custom python scripts
+PATH="$HOME/Projects/python/:$PATH"
+# XAMPP binaries
+PATH="/opt/lampp/bin/:$PATH"
+source /opt/wordpress/wp-completion.bash

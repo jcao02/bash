@@ -1,0 +1,24 @@
+[user]
+    name  = Juan Carlos Arocha
+    email = arochajuan2@gmail.com
+[alias]
+    co = checkout
+	s  = status
+	b  = branch
+	r  = remote
+	ls = log --pretty=format:"%C(yellow)%h\\ %Cgreen[%ai]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --graph --abbrev-commit
+	ll = log --pretty=format:"%C(yellow)%h\\ %Cgreen[%ai]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --stat --abbrev-commit
+	meld = difftool -d
+	rebase10 = rebase -i HEAD~10
+[diff]
+    tool = meld
+[merge]
+    tool = meld
+[color]
+    ui = true
+[push]
+	default = simple
+[grep]
+	lineNumber = true
+[core]
+	excludesfile = ~/.gitignore_global
